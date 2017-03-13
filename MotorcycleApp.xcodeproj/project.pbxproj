@@ -14,6 +14,7 @@
 		CC3AFD5A1E7722E900C90530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3AFD581E7722E900C90530 /* LaunchScreen.storyboard */; };
 		CC3AFD651E7722E900C90530 /* MotorcycleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3AFD641E7722E900C90530 /* MotorcycleAppTests.swift */; };
 		CC3AFD701E7722E900C90530 /* MotorcycleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3AFD6F1E7722E900C90530 /* MotorcycleAppUITests.swift */; };
+		CC3AFD7F1E77254A00C90530 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3AFD7E1E77254A00C90530 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CC3AFD6B1E7722E900C90530 /* MotorcycleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotorcycleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC3AFD6F1E7722E900C90530 /* MotorcycleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorcycleAppUITests.swift; sourceTree = "<group>"; };
 		CC3AFD711E7722E900C90530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC3AFD7E1E77254A00C90530 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3AFD7F1E77254A00C90530 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				CC3AFD631E7722E900C90530 /* MotorcycleAppTests */,
 				CC3AFD6E1E7722E900C90530 /* MotorcycleAppUITests */,
 				CC3AFD4D1E7722E900C90530 /* Products */,
+				CC3AFD7D1E77254A00C90530 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				CC3AFD711E7722E900C90530 /* Info.plist */,
 			);
 			path = MotorcycleAppUITests;
+			sourceTree = "<group>";
+		};
+		CC3AFD7D1E77254A00C90530 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC3AFD7E1E77254A00C90530 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
