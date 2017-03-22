@@ -27,6 +27,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+<<<<<<< HEAD
     
     
     @IBAction func textFieldReturn(_ sender: AnyObject) {
@@ -67,4 +68,25 @@ class ViewController: UIViewController, MKMapViewDelegate {
             }
         })
     }
+=======
+
+extension ViewController : CLLocationManagerDelegate {
+        func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+            if status == .AuthorizedWhenInUse {
+                locationManager.requestLocation()
+            }
+        }
+        
+        func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+            if let location = locations.first {
+                print("location:: (location)")
+            }
+        }
+        
+        func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+            print("error:: (error)")
+        }
+    }
+
+>>>>>>> origin/master
 }
